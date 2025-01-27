@@ -1,0 +1,83 @@
+h1{
+    text-align: center;
+    color: blue;
+    background-color: aqua;
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+h3{
+    text-align: center;
+    text-shadow: blue;
+    
+}
+button{
+    
+    text-align: center;
+    color: blue;
+}
+
+body{
+    background-color: rgb(179, 179, 179);
+}
+
+p{
+    background-color: #1b6c7d;
+    color: rgb(183, 183, 183);
+    margin: 3px;
+    padding: 8px;
+    text-align: center;
+   
+}
+
+#p1{
+    color: blue;
+    background-color: black;
+}
+#p2{
+    color: aqua;
+    background-color: yellow;
+}
+#p3{
+    color: rgb(211, 16, 16);
+    background-color: green;
+}
+.apple{
+    color: green;
+    font-size: 40px;
+    background-color: black;
+}
+.orange{
+    color: orange;
+    font-size: 50px;
+    background-color: aliceblue;
+}
+
+.myClass{
+
+    color: #ee00ff;
+    background-color: burlywood;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.divOne{
+    border: solid 5px rgb(0, 0, 0);
+    background-color:red;
+    text-align: center;
+}
+
+.parent{
+    background-color: #ff0000;
+    width: 300px;
+    height: 200px;
+}
+
+.child{
+    background-color: rgb(225, 255, 0);
+    height: 100px;
+    width: 100px;
+}
