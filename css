@@ -72,7 +72,6 @@ h1{
 #img1{
   height: 100%;
   width: 100%;
- 
 }
   
 #para1{
@@ -195,14 +194,3 @@ nav a:hover{
   text-align: justify;
 
 }
-p{
-  color: red;
-}
-button {
- background-color: blue;
- font-size: 60px;
-}
-
-
-
-

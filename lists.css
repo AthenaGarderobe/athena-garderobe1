@@ -1,0 +1,31 @@
+.unordered {
+    list-style-type: square;
+    background: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    line-height: 170%;
+    padding: 20px;
+    width: 20%;
+    margin-left: 20px;
+}
+
+.unordered li:nth-child(1) {
+    background-color: blanchedalmond;
+    padding: 5px;
+    margin: 0px 0px 5px 20px;
+}
+
+.unordered li:nth-child(2) {
+    background-color: green; 
+    padding: 5px;
+    margin: 0px 0px 5px 20px;
+}
+
+.unordered li:nth-child(3) {
+    background-color: orange; 
+    padding: 5px;
+    margin: 0px 0px 5px 20px;
+}
+.song{
+    background-color: white;
+}
