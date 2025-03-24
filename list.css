@@ -1,0 +1,29 @@
+.unordered{
+    list-style-type: square;
+    background: rgb(64, 0, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 1.3em;
+    line-height: 170%;
+    padding: 20px;
+    width: 20%;
+    margin-left: 20px;
+}
+
+.unordered li{
+    background-color: aquamarine;
+    padding: 5px;
+    margin: 0px 0px 5px 20px;
+
+    
+}
+.nested{
+    list-style-type: circle;
+    background: red;
+    padding: 5px;
+    margin-left: 0px;
+}
+#li1{
+    color: rgb(130, 130, 215);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+

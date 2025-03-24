@@ -1,208 +1,79 @@
-.flex-container {
-  display: flex;
-  flex-flow:row wrap;
-  background-color: blue;
-  height: 400px;
-  justify-content: center;
-  align-items:flex-start;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(172, 172, 172);
+    height: 400px;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 h1{
-    text-align: left;
-    color: black;
-
+    text-align: center;
+    color: brown;
 }
+
 
 .flex-container > div{
-    
-    width: 100px;
+background-color: rgba(60, 52, 96, 0.528);
+width: 100px;
+height: 100px;
+margin: 10px;
+text-align: center;
+font-size: 50px;
+color: white;
+}
+.allimg{
     height: 100px;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
-    color: aliceblue;
-    border: solid 5px black;
+    width: 100px;
 }
 
-  #div1 {
-    background-color: violet;
-    align-self: flex-end;
-  }
-  #div2{
-    background-color: red;
-    order: -1;
-   }
-  
-  #div3{
-    background-color: black;
-    align-self: flex-end;
-   }
-  
-  #div4{
-    background-color: rgb(211, 180, 211);
-   }
-   #div5{
-    background-color: purple;  
-   }
-   #div6{
-    background-color: blue;
-    align-self: flex-end;
-   }
-   .Flex-container3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: aqua;
-    border: 10px black;
-    height: 500px;
-   }
+
+.Flex-Container3{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ background-color: rgb(251, 255, 0);
+ border:solid 10px black;
+ height: 500px;
+}
 #left-div1{
-  height: 300px;
-  width: 300px;
-  border: solid 5px black; 
+    height: 300px;
+    width: 300px;
+    border: solid 5px black;
+   
+}
+#right-div2{
+    height:300px ;
+    width: 300px;
+    border: solid 5px black;
+    background-image:url(https://dopest.se/_next/image/?url=https%3A%2F%2Fwp.dopest.se%2Fwp-content%2Fuploads%2F2024%2F07%2Fsickan-yasin-annu-en-dag-lyrics.png&w=3840&q=75
+    );
+    background-size: 300px 300px;/*this is width and height inside right-div2*/
+
 }
 
 #right-div2{
-  height: 300px;
-  width: 300px;
-  border: solid 5px black; 
-  background-image: url(https://i.etsystatic.com/19535642/r/il/c3691b/1924573871/il_fullxfull.1924573871_rxs9.jpg);
-  background-size: 300px 300px;/*this is widch and height-div2*/
-}      
+    height:300px ;
+    width: 300px;
+
+}   
+
+
 #img1{
-  height: 100%;
-  width: 100%;
- 
+    height: 100%;
+    width: 100%;
 }
-  
 #para1{
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-}
-#vid{
-  height: 250px;
-  width: 300px;
-  background-color: red;
-  
-}
-
-#vid2{
-  height: auto;
-  width: auto;
-  justify-self: right; 
-}
-
-#vid3{
-  height: 300px;
-  width: auto;
-justify-self: center;
-}
-
-*{
-  margin:0;
-  padding: 0;
-}
-body{
-  font-family:'poppins';
-  text-align: center;
-}
-.wrapper{
-  width: 90%;
-  margin: 0 auto;
-}
-header{
-  width: 100%;
-  height: 100px;
-  background-color: #c0392b;
-  position: fixed;
-}
-.logo{
-  width: 30%;
-  float: left;
-  text-align: left;
-  line-height: 100px;
-}
-.logo{
-  text-decoration: none;
-  font-size: 30px;
-  font-family: 'Pacifico';
-  color: #fff;
-  letter-spacing: 4px;
-}
-nav{
-  float: right;
-  line-height: 100px;
-}
-nav a{
-  text-decoration: none;
-  font-family: 'Poppins';
-  letter-spacing: 4px;
-  font-size: 20px;
-  color: white;
-  padding: 36px 10px;
-  margin: 0 1px;
-  font-weight: 500;
-}
-nav a:hover{
-  background: white;
-  color: black;
-}
-.banner-area{
-  background-image: url(image\ 1.jpg);
-  background-size: cover;
-  background-position: center center;
-  top: 100px;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-}
-.banner-area::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #130f40;
-  opacity: .7;
-  z-index: -1;
-
-  }
-.banner-area h2{
-  padding-top: 8%;
-  font-size: 80px;
-  color: #fff;
-}
-.content-area{
-  width: 100%;
-  height: 800px;
-  position: relative;
-  background: #fff;
-  top: 550px;
-}
-.content-area h2{
-  font-size: 40px;
-  margin: 0;
-  padding-top: 30px;
-  letter-spacing: 4px;
-
-}
-.content-areap{
-  padding: 2% 0;
-  line-height: 35px;
-  text-align: justify;
-
-}
-p{
-  color: red;
-}
-button {
- background-color: blue;
- font-size: 60px;
+    font-size: large;
+    color: aliceblue;
+    
 }
 
 
+.video1{
+    width: 100%;
+    height: 100%;
+}
 
 
+   
