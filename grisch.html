@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="ut f-8" />
+        <title>FlexBox Layout</title>
+        <link rel="stylesheet" type="text/css" href="grisch.css" />
+    <style>
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+ 
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+ 
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+ 
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 4px;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            margin-left: 20px;
+            transition: all 0.3s ease;
+        }
+ 
+        nav a:hover {
+            color: #000;
+            background: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+ 
+        .banner-area {
+            background: #000;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+ 
+        .banner-area h2 {
+            font-size: 60px;
+            font-weight: bold;
+            color: #fff;
+        }
+ 
+        .content-area {
+            padding: 100px 0 60px;
+            background-color: #111;
+            text-align: center;
+            color: #fff;
+        }
+ 
+        .content-area h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+ 
+        .shoe-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+            padding: 0 40px;
+        }
+ 
+        .shoe-item {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        .shoe-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+ 
+        .shoe-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+ 
+        .shoe-item:hover img {
+            transform: scale(1.05);
+        }
+ 
+        .buy-btn {
+            margin-top: 15px;
+            padding: 12px 24px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+ 
+        .buy-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Athenagardobe</a>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Feature</a>
+            <a href="#">Price</a>
+            <a href="about.html">aboutus</a>
+        </nav>
+    </header>
+ 
+    <div class="banner-area">
+        <h2>Grisch clothing</h2>
+    </div>
+ 
+    <div class="content-area">
+        <h2>Sweater</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="21417711r_S__1_-removebg-preview.png" alt="shirt 1">
+                <p style="color: #000;">Morris Half zip</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="21543611r_1-removebg-preview.png" alt="Shoe 2">
+                <p style="color: #000;">Ralph lauren Half zip</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="25684011r_1__1_-removebg-preview.png" alt="Shoe 3">
+                <p style="color: #000;">Ralph lauren Half zip</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="21418211r_1-removebg-preview.png" alt="Shoe 4">
+                <p style="color: #000;">Morris Half zip</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <h2>Jeans</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="28264711r_1-removebg-preview.png" alt="Shoe 1">
+                <p style="color: #000;">Dondup Jeans</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="27972311r_1-removebg-preview.png" alt="Shoe 2">
+                <p style="color: #000;">Replay Jeans</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="25557511r_1-removebg-preview.png" alt="Shoe 3">
+                <p style="color: #000;">Nudie Jeans</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="16818311r_1__1_-removebg-preview.png" alt="Shoe 4">
+                <p style="color: #000;">Levis 501 Jeans</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <h2>Shoes</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="19217011r_1__1_-removebg-preview.png" alt="Shoe 1">
+                <p style="color: #000;">Lanvin Cap Toe</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="28f7b5eb3d05d80f90c1a3d32e821c28__1_-removebg-preview.png" alt="Shoe 2">
+                <p style="color: #000;">Maison Margiela Gats</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="svarta_loubo-removebg-preview.png" alt="Shoe 3">
+                <p style="color: #000;">Louboutin Junior spike</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="dcb0add83a7b918570f72242803dc7ef__1_-removebg-preview (1).png" alt="Shoe 4">
+                <p style="color: #000;">Philippe Model</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <h2>Jackets</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="w1000_q80__3_-removebg-preview.png" alt="Shoe 1">
+                <p style="color: #000;">Woolrich Windbreaker</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="20154011r_1-removebg-preview.png" alt="Shoe 2">
+                <p style="color: #000;">J.lindberg Jacket</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="moncler-maya-short-down-jacket-men-night-blue-moncler-removebg-preview.png" alt="Shoe 3">
+                <p style="color: #000;">Moncler Maya</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="moncler-gra-ull-jacka-44810111-1_2-removebg-preview.png" alt="Shoe 4">
+                <p style="color: #000;">Moncler Maglione</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
+ 
+ 
