@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+ 
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+ 
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
+}
+ 
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+ 
+nav a:hover {
+    color: #000;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+ 
+.about-us-banner {
+    background: #111;
+    padding: 80px 0;
+    text-align: center;
+}
+ 
+.about-us-banner h2 {
+    font-size: 60px;
+    color: #fff;
+}
+ 
+.about-us-banner p {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+}
+ 
+.about-us-content {
+    padding: 80px 0;
+    background-color: #222;
+    text-align: center;
+}
+ 
+.about-us-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+ 
+.about-us-content p {
+    color: #ccc;
+    line-height: 28px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+ 
+.featured-products {
+    padding: 60px 0;
+    background: #000;
+    text-align: center;
+}
+ 
+.featured-products h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+ 
+.product {
+    display: inline-block;
+    width: 200px;
+    margin: 0 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+ 
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+ 
+.product p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+}
+ 
+.product button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+ 
+.product:hover {
+    transform: scale(1.05);
+}
+ 
+.product button:hover {
+    background-color: #444;
+}
