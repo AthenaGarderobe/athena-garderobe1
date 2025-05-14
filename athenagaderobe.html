@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="ut f-8" />
+        <title>FlexBox Layout</title>
+        <link rel="stylesheet" type="text/css" href="athenagaderobe.css" />
+    <style>
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+ 
+        .wrapper {
+            width: 90%;
+            margin: 0 auto;
+        }
+ 
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+ 
+        .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 4px;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            margin-left: 20px;
+            transition: all 0.3s ease;
+        }
+ 
+        nav a:hover {
+            color: #000;
+            background: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+ 
+        .banner-area {
+            background: #000;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+ 
+        .banner-area h2 {
+            font-size: 60px;
+            font-weight: bold;
+            color: #fff;
+        }
+ 
+        .content-area {
+            padding: 100px 0 60px;
+            background-color: #111;
+            text-align: center;
+            color: #fff;
+        }
+ 
+        .content-area h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+ 
+        .shoe-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+            padding: 0 40px;
+        }
+ 
+        .shoe-item {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+ 
+        .shoe-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+ 
+        .shoe-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+ 
+        .shoe-item:hover img {
+            transform: scale(1.05);
+        }
+ 
+        .buy-btn {
+            margin-top: 15px;
+            padding: 12px 24px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+ 
+        .buy-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Athenagardobe</a>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Feature</a>
+            <a href="#">Price</a>
+            <a href="about.html">aboutus</a>
+        </nav>
+    </header>
+ 
+    <div class="banner-area">
+        <h2>Boys clothing</h2>
+    </div>
+ 
+    <div class="content-area">
+        <h2>Sweater</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="32808b774b694ce385722c8354b2080c.webp" alt="shirt 1">
+                <p style="color: #000;">WE Fashion
+                    CABLE KNIT COTTON</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="new1.webp" alt="Shoe 2">
+                <p style="color: #000;">WE Fashion
+                    
+                    </p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="47.webp"Shoe 3">
+                <p style="color: #000;">LMTD
+                    LANGARM - Sweatshirt - vintage indigo</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="real.webp" alt="Shoe 4">
+                <p style="color: #000;">GLATTE - Sweatshirt</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <h2>Jeans</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="333.webp" alt="Shoe 1">
+                <p style="color: #000;">Mango Kids
+                    Jeans straight leg - blue</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="4444.webp" alt="Shoe 2">
+                <p style="color: #000;">Mango Kids
+                    Jeans straight leg - white</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="5555.webp" alt="Shoe 3">
+                <p style="color: #000;">Levi's®
+                    512 SLIM - Jeans straight leg - hydra</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="66666.webp" alt="Shoe 4">
+                <p style="color: #000;">Levi's®
+                    512 SLIM - Jeans straight leg - grey</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <h2>Shoes</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="s1.webp" alt="Shoe 1">
+                <p style="color: #000;">Nike Sportswear
+                    DUNK UNISEX - Sneakers</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="s2.webp" alt="Shoe 2">
+                <p style="color: #000;">Nike Sportswear
+                    DUNK UNISEX - Sneakers</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="s3.webp" alt="Shoe 3">
+                <p style="color: #000;">New Balance
+                    530 UNISEX - Sneakers</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="s4.webp" alt="Shoe 4">
+                <p style="color: #000;">New Balance
+                    530 UNISEX - Sneakers</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="content-area">
+        <h2>Jackets</h2>
+        <div class="shoe-grid">
+            <div class="shoe-item">
+                <img src="j1.webp" alt="Shoe 1">
+                <p style="color: #000;">Lacoste
+                    BLOUSON WINTER ELEVATED ESSENTIAL UNISEX </p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="j4.webp" alt="Shoe 2">
+                <p style="color: #000;">Tommy Hilfiger
+                    ESSENTIAL </p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="c005f1833dd846ff824551edaa99145e.webp" alt="Shoe 3">
+                <p style="color: #000;">Calvin Klein Jeans
+                    ESSENTIAL PUFFER</p>
+                <button class="buy-btn">Buy</button>
+            </div>
+            <div class="shoe-item">
+                <img src="j7.webp" alt="Shoe 4">
+                <p style="color: #000;">Nike Sportswear
+                    UNISEX </p>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
+ 
